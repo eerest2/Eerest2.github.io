@@ -1,59 +1,94 @@
-/* General Page Styling */
+/* High-Visibility, Accessible Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8fafc;
-    color: #1e293b;
+    font-family: Arial, Verdana, sans-serif;
+    background-color: #ffffff; /* Crisp white for high contrast */
+    color: #000000; /* Solid black text */
     margin: 0;
     padding: 0;
+    padding-top: 70px; /* Space for the sticky menu */
+    font-size: 20px; /* Larger base font size for easy reading */
 }
 
-h1, h2 {
-    color: #0284c7;
+h1 {
+    font-size: 2.5em;
+    color: #003366; /* Dark Navy Blue */
     text-align: center;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #003366;
+    text-align: center;
+    border-bottom: 3px solid #003366;
+    padding-bottom: 10px;
+    margin-top: 40px;
 }
 
 p {
     text-align: center;
     line-height: 1.6;
+    margin: 15px 10px;
 }
 
-/* Navigation Menu */
+.subtitle {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Persistent Navigation Menu */
 .top-menu {
-    background-color: #0f172a;
+    background-color: #003366;
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding: 15px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000; /* Keeps menu on top when scrolling */
 }
 
 .top-menu a {
-    color: #f8fafc;
+    color: #ffffff; /* White text on dark blue */
     text-decoration: none;
     font-weight: bold;
-    margin: 0 20px;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
+    margin: 0 15px;
+    font-size: 1.2em;
+    padding: 10px;
 }
 
 .top-menu a:hover {
-    color: #38bdf8;
-}
-
-/* Contact Box Styling */
-.contact-box {
-    background-color: #e2e8f0;
-    border-top: 4px solid #0284c7;
-    padding: 30px 20px;
-    margin-top: 40px;
-}
-
-.contact-box a {
-    color: #0ea5e9;
-    font-size: 1.2em;
-    text-decoration: none;
-}
-
-.contact-box a:hover {
     text-decoration: underline;
+}
+
+/* Section Spacing */
+.section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+/* Giant Tap-to-Call Button */
+.call-button {
+    display: block;
+    background-color: #cc0000; /* High visibility red */
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 90%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.call-button:hover {
+    background-color: #990000;
+}
+
+.large-text {
+    font-size: 1.4em;
 }
 
 /* Responsive Image Styling */
@@ -62,6 +97,5 @@ img {
     margin: 20px auto;
     max-width: 90%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid #000000; /* Clear black border around images */
 }
