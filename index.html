@@ -32,14 +32,29 @@
     </div>
 
     <div id="contact" class="section">
-        <h2>Visit Our Facebook</h2>
-        <p>Scan the code below to visit our page.</p>
+        <h2>Contact Us</h2>
         
+        <!-- Contact Form in a White Box -->
+        <div class="form-container">
+            <h3>Send Us a Message</h3>
+            <!-- Replace YOUR_FORMSPREE_LINK with your actual link later -->
+            <form action="YOUR_FORMSPREE_LINK" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Your Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">How can we help?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+
+        <h3 style="text-align: center; margin-top: 40px;">Or Visit Our Facebook</h3>
         <!-- QR Code Image -->
         <img src="IMG_20260720_160450.png" alt="605 All Tech Facebook QR Code">
-        
-        <h2>Contact Us Directly</h2>
-        <p class="large-text">Call or Text: <strong>(605) 423-2191</strong></p>
     </div>
 
 </body>
