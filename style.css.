@@ -1,6 +1,6 @@
 /* High-Visibility, Accessible Styling */
 * {
-    box-sizing: border-box; /* Ensures padding doesn't break form width */
+    box-sizing: border-box;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     color: #000000;
     margin: 0;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 70px; /* Space for the sticky menu */
     font-size: 20px;
 }
 
@@ -64,6 +64,26 @@ p {
     text-decoration: underline;
 }
 
+/* --- Under Construction Banner Styling --- */
+.construction-banner {
+    background-color: #fef08a; /* High-visibility soft yellow */
+    border-bottom: 3px solid #ca8a04;
+    padding: 15px 20px;
+    margin-top: 0;
+}
+
+.construction-banner p {
+    color: #713f12; /* Dark brown text for maximum contrast on yellow */
+    margin: 0;
+    font-size: 0.95em;
+}
+
+.construction-banner a {
+    color: #1d4ed8;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /* Section Spacing */
 .section {
     max-width: 800px;
@@ -91,9 +111,9 @@ p {
     background-color: #990000;
 }
 
-/* --- New Contact Form Styling --- */
+/* Contact Form Styling */
 .form-container {
-    background-color: #ffffff; /* Crisp white box for contrast */
+    background-color: #ffffff;
     padding: 30px;
     margin: 30px auto;
     border: 2px solid #003366;
