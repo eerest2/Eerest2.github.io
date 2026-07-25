@@ -1,12 +1,12 @@
-/* High-Visibility, Accessible Styling */
+/* High-Visibility, Accessible Styling with Darker Background & New Font */
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Verdana, sans-serif;
-    background-color: #e5e7eb; /* Soft Grey Background */
-    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    background-color: #374151; /* Much darker charcoal grey background */
+    color: #f3f4f6; /* Bright off-white text for maximum contrast against dark grey */
     margin: 0;
     padding: 0;
     padding-top: 70px; /* Space for the sticky menu */
@@ -15,16 +15,16 @@ body {
 
 h1 {
     font-size: 2.5em;
-    color: #003366;
+    color: #60a5fa; /* Brighter blue to pop on dark backgrounds */
     text-align: center;
     margin-bottom: 5px;
 }
 
 h2 {
     font-size: 2em;
-    color: #003366;
+    color: #60a5fa;
     text-align: center;
-    border-bottom: 3px solid #003366;
+    border-bottom: 3px solid #60a5fa;
     padding-bottom: 10px;
     margin-top: 40px;
 }
@@ -38,17 +38,19 @@ p {
 .subtitle {
     font-size: 1.2em;
     font-weight: bold;
+    color: #d1d5db;
 }
 
 /* Persistent Navigation Menu */
 .top-menu {
-    background-color: #003366;
+    background-color: #1f2937;
     position: fixed;
     top: 0;
     width: 100%;
     padding: 15px 0;
     text-align: center;
     z-index: 1000;
+    border-bottom: 2px solid #4b5563;
 }
 
 .top-menu a {
@@ -61,26 +63,7 @@ p {
 }
 
 .top-menu a:hover {
-    text-decoration: underline;
-}
-
-/* --- Under Construction Banner Styling --- */
-.construction-banner {
-    background-color: #fef08a; /* High-visibility soft yellow */
-    border-bottom: 3px solid #ca8a04;
-    padding: 15px 20px;
-    margin-top: 0;
-}
-
-.construction-banner p {
-    color: #713f12; /* Dark brown text for maximum contrast on yellow */
-    margin: 0;
-    font-size: 0.95em;
-}
-
-.construction-banner a {
-    color: #1d4ed8;
-    font-weight: bold;
+    color: #60a5fa;
     text-decoration: underline;
 }
 
@@ -94,7 +77,7 @@ p {
 /* Giant Tap-to-Call Button */
 .call-button {
     display: block;
-    background-color: #cc0000;
+    background-color: #dc2626; /* High visibility red */
     color: #ffffff;
     font-size: 1.5em;
     font-weight: bold;
@@ -104,27 +87,28 @@ p {
     margin: 30px auto;
     border-radius: 10px;
     max-width: 90%;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
 }
 
 .call-button:hover {
-    background-color: #990000;
+    background-color: #b91c1c;
 }
 
-/* Contact Form Styling */
+/* Contact Form Styling (Keeping white box for easy form readability) */
 .form-container {
     background-color: #ffffff;
+    color: #000000;
     padding: 30px;
     margin: 30px auto;
-    border: 2px solid #003366;
+    border: 3px solid #1f2937;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     max-width: 90%;
 }
 
 .form-container h3 {
     text-align: center;
-    color: #003366;
+    color: #1f2937;
     margin-top: 0;
     font-size: 1.5em;
 }
@@ -134,27 +118,29 @@ label {
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 5px;
+    color: #1f2937;
 }
 
 input, textarea {
     width: 100%;
     padding: 15px;
     font-size: 1em;
-    border: 2px solid #6b7280;
+    border: 2px solid #4b5563;
     border-radius: 8px;
     background-color: #f9fafb;
+    color: #000000;
 }
 
 input:focus, textarea:focus {
     outline: none;
-    border-color: #003366;
+    border-color: #2563eb;
     background-color: #ffffff;
 }
 
 .submit-button {
     display: block;
     width: 100%;
-    background-color: #003366;
+    background-color: #1f2937;
     color: #ffffff;
     font-size: 1.3em;
     font-weight: bold;
@@ -167,7 +153,28 @@ input:focus, textarea:focus {
 }
 
 .submit-button:hover {
-    background-color: #002244;
+    background-color: #111827;
+}
+
+/* --- Bottom "Still Building" Footer Notice --- */
+.footer-notice {
+    background-color: #1f2937;
+    border-top: 3px solid #f59e0b; /* Yellow warning accent */
+    padding: 25px 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.footer-notice p {
+    color: #e5e7eb;
+    margin: 0;
+    font-size: 1em;
+}
+
+.footer-notice a {
+    color: #60a5fa;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* Responsive Image Styling */
@@ -176,5 +183,6 @@ img {
     margin: 20px auto;
     max-width: 90%;
     height: auto;
-    border: 2px solid #000000;
+    border: 3px solid #1f2937;
+    border-radius: 8px;
 }
