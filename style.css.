@@ -1,44 +1,45 @@
-/* High-Visibility, Accessible Styling with Darker Background & New Font */
+/* Professional High-Visibility Styling */
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-    background-color: #374151; /* Much darker charcoal grey background */
-    color: #f3f4f6; /* Bright off-white text for maximum contrast against dark grey */
+    background-color: #111827; /* Rich dark background */
+    color: #f9fafb; /* Crisp text */
     margin: 0;
     padding: 0;
-    padding-top: 70px; /* Space for the sticky menu */
-    font-size: 20px;
+    padding-top: 80px; /* Space for sticky nav */
+    font-size: 19px;
 }
 
 h1 {
-    font-size: 2.5em;
-    color: #60a5fa; /* Brighter blue to pop on dark backgrounds */
+    font-size: 2.6em;
+    color: #fbbf24; /* Vibrant Gold */
     text-align: center;
     margin-bottom: 5px;
 }
 
 h2 {
     font-size: 2em;
-    color: #60a5fa;
+    color: #38bdf8; /* Bright Electric Cyan */
     text-align: center;
-    border-bottom: 3px solid #60a5fa;
+    border-bottom: 3px solid #38bdf8;
     padding-bottom: 10px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 p {
     text-align: center;
     line-height: 1.6;
     margin: 15px 10px;
+    color: #e2e8f0;
 }
 
 .subtitle {
     font-size: 1.2em;
     font-weight: bold;
-    color: #d1d5db;
+    color: #38bdf8;
 }
 
 /* Persistent Navigation Menu */
@@ -50,59 +51,64 @@ p {
     padding: 15px 0;
     text-align: center;
     z-index: 1000;
-    border-bottom: 2px solid #4b5563;
+    border-bottom: 3px solid #fbbf24;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 .top-menu a {
-    color: #ffffff;
+    color: #f9fafb;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 15px;
+    margin: 0 20px;
     font-size: 1.2em;
     padding: 10px;
 }
 
 .top-menu a:hover {
-    color: #60a5fa;
+    color: #fbbf24;
     text-decoration: underline;
 }
 
-/* Section Spacing */
-.section {
+/* Section Card Containers */
+.card-box {
+    background-color: #1f2937;
+    border: 3px solid #38bdf8;
+    border-radius: 15px;
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px 10px;
+    margin: 30px auto;
+    padding: 35px 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
 /* Giant Tap-to-Call Button */
 .call-button {
     display: block;
-    background-color: #dc2626; /* High visibility red */
+    background-color: #ef4444;
     color: #ffffff;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     padding: 20px;
-    margin: 30px auto;
-    border-radius: 10px;
+    margin: 30px auto 10px auto;
+    border-radius: 12px;
+    border: 3px solid #fca5a5;
     max-width: 90%;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .call-button:hover {
-    background-color: #b91c1c;
+    background-color: #dc2626;
 }
 
-/* Contact Form Styling (Keeping white box for easy form readability) */
+/* Contact Form Styling */
 .form-container {
     background-color: #ffffff;
     color: #000000;
-    padding: 30px;
-    margin: 30px auto;
-    border: 3px solid #1f2937;
+    padding: 25px;
+    margin: 25px auto;
+    border: 3px solid #fbbf24;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     max-width: 90%;
 }
 
@@ -110,22 +116,23 @@ p {
     text-align: center;
     color: #1f2937;
     margin-top: 0;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 label {
     display: block;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 5px;
     color: #1f2937;
+    font-size: 0.95em;
 }
 
 input, textarea {
     width: 100%;
-    padding: 15px;
+    padding: 12px;
     font-size: 1em;
-    border: 2px solid #4b5563;
+    border: 2px solid #6b7280;
     border-radius: 8px;
     background-color: #f9fafb;
     color: #000000;
@@ -140,49 +147,66 @@ input:focus, textarea:focus {
 .submit-button {
     display: block;
     width: 100%;
-    background-color: #1f2937;
+    background-color: #2563eb;
     color: #ffffff;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
-    padding: 15px;
+    padding: 14px;
     border: none;
     border-radius: 8px;
-    margin-top: 30px;
+    margin-top: 25px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 .submit-button:hover {
-    background-color: #111827;
+    background-color: #1d4ed8;
 }
 
-/* --- Bottom "Still Building" Footer Notice --- */
+.social-title {
+    color: #fbbf24;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 1.3em;
+}
+
+/* --- Strict Image Sizing Control (Prevents oversized images) --- */
+.image-container img {
+    display: block;
+    width: 100%;
+    max-width: 550px; /* Keeps flyer a clean, readable size */
+    height: auto;
+    margin: 20px auto;
+    border: 3px solid #fbbf24;
+    border-radius: 10px;
+}
+
+.qr-container img {
+    display: block;
+    width: 100%;
+    max-width: 220px; /* Keeps QR code compact and scannable */
+    height: auto;
+    margin: 15px auto;
+    border: 3px solid #fbbf24;
+    border-radius: 10px;
+}
+
+/* Bottom Footer Notice */
 .footer-notice {
     background-color: #1f2937;
-    border-top: 3px solid #f59e0b; /* Yellow warning accent */
+    border-top: 4px solid #fbbf24;
     padding: 25px 20px;
-    margin-top: 60px;
+    margin-top: 50px;
     text-align: center;
 }
 
 .footer-notice p {
-    color: #e5e7eb;
+    color: #f9fafb;
     margin: 0;
     font-size: 1em;
 }
 
 .footer-notice a {
-    color: #60a5fa;
+    color: #38bdf8;
     font-weight: bold;
     text-decoration: underline;
-}
-
-/* Responsive Image Styling */
-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 90%;
-    height: auto;
-    border: 3px solid #1f2937;
-    border-radius: 8px;
 }
