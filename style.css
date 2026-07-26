@@ -1,12 +1,12 @@
-/* Lato Black & Layered Neon/Gold Styling */
+/* Lato Black & Layered Neon/Gold Styling with E-Waste Grids */
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    font-weight: 950; /* Maximum bold weight for Lato Black */
-    background-color: #000000; /* Pure Black Base Layer */
+    font-weight: 950;
+    background-color: #000000;
     color: #f3f4f6;
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ body {
 
 h1 {
     font-size: 3em;
-    color: #fbbf24; /* Vibrant Gold */
+    color: #fbbf24;
     text-align: center;
     margin-bottom: 5px;
     text-shadow: 0 0 12px rgba(251, 191, 36, 0.6), 2px 2px 0px #000000;
@@ -24,9 +24,9 @@ h1 {
 
 h2 {
     font-size: 2.3em;
-    color: #fbbf24; /* Gold Titles */
+    color: #fbbf24;
     text-align: center;
-    border-bottom: 3px solid #00f0ff; /* Electric Blue Accent Line */
+    border-bottom: 3px solid #00f0ff;
     padding-bottom: 10px;
     margin-top: 10px;
     text-shadow: 0 0 8px rgba(0, 240, 255, 0.5);
@@ -41,7 +41,7 @@ p {
 
 .subtitle {
     font-size: 1.25em;
-    color: #00f0ff; /* Electric Blue First Layer */
+    color: #00f0ff;
     text-shadow: 0 0 8px rgba(0, 240, 255, 0.5);
 }
 
@@ -65,8 +65,8 @@ p {
 .top-menu a {
     color: #f9fafb;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.2em;
+    margin: 0 12px;
+    font-size: 1.1em;
     padding: 10px;
     transition: color 0.2s ease;
 }
@@ -77,10 +77,10 @@ p {
     text-decoration: underline;
 }
 
-/* Layered Neon Card Containers (Black + Blue background layers with Neon borders) */
+/* Layered Neon Card Containers */
 .card-box {
     background: linear-gradient(135deg, #050b14 0%, #000000 100%);
-    border: 3px solid #00f0ff; /* Electric Blue Neon Border */
+    border: 3px solid #00f0ff;
     border-radius: 15px;
     max-width: 850px;
     margin: 30px auto;
@@ -98,7 +98,7 @@ p {
 
 .service-item {
     background-color: #0a1120;
-    border: 2px solid #fbbf24; /* Gold neon sub-borders */
+    border: 2px solid #fbbf24;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 12px rgba(251, 191, 36, 0.2);
@@ -116,6 +116,64 @@ p {
     margin-bottom: 0;
     font-size: 0.95em;
     color: #f3f4f6;
+}
+
+/* E-Waste Policy Layout */
+.ewaste-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+@media(min-width: 600px) {
+    .ewaste-flex {
+        flex-direction: row;
+    }
+}
+
+.ewaste-accepted {
+    flex: 1;
+    background-color: #0a1120;
+    border: 2px solid #39ff14; /* Neon green for accepted */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(57, 255, 20, 0.2);
+}
+
+.ewaste-accepted h3 {
+    color: #39ff14;
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.ewaste-rejected {
+    flex: 1;
+    background-color: #0a1120;
+    border: 2px solid #ef4444; /* Neon red for rejected */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.2);
+}
+
+.ewaste-rejected h3 {
+    color: #ef4444;
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.ewaste-list {
+    margin: 15px 0 0 0;
+    padding-left: 20px;
+    color: #e2e8f0;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.ewaste-list li {
+    margin-bottom: 8px;
 }
 
 /* Lesson List Styling */
