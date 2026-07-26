@@ -135,7 +135,7 @@ p {
 .ewaste-accepted {
     flex: 1;
     background-color: #0a1120;
-    border: 2px solid #39ff14; /* Neon green for accepted */
+    border: 2px solid #39ff14;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 12px rgba(57, 255, 20, 0.2);
@@ -151,7 +151,7 @@ p {
 .ewaste-rejected {
     flex: 1;
     background-color: #0a1120;
-    border: 2px solid #ef4444; /* Neon red for rejected */
+    border: 2px solid #ef4444;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 12px rgba(239, 68, 68, 0.2);
