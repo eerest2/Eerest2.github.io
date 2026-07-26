@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>605 All Tech | Hardware Repair & Tech Lessons</title>
+    <title>605 All Tech | Hardware Repair, Tech Lessons & E-Waste</title>
     <!-- Import Lato Black Font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
     <nav class="top-menu">
         <a href="#home">Home</a>
         <a href="#services">Services</a>
+        <a href="#ewaste">E-Waste</a>
         <a href="#lessons">Tech Lessons</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -23,8 +24,8 @@
     <!-- Home Section -->
     <div id="home" class="card-box">
         <h1>605 All Tech</h1>
-        <p class="subtitle">Hardware & Electronics Repair / Patient Tech Education</p>
-        <p>Component-Level Diagnostics, PCs, Phones, and One-on-One Tech Training.</p>
+        <p class="subtitle">Hardware Repair / E-Waste / Patient Tech Education</p>
+        <p>Component-Level Diagnostics, PCs, Phones, Selective E-Waste Recycling, and One-on-One Training.</p>
         
         <!-- Call Button -->
         <a href="tel:6054232191" class="call-button">Tap to Call: (605) 423-2191</a>
@@ -56,6 +57,34 @@
         </div>
     </div>
 
+    <!-- E-Waste Section (Limited Acceptance) -->
+    <div id="ewaste" class="card-box">
+        <h2>E-Waste Recycling Policy</h2>
+        <p class="highlight-text">We accept select electronics for responsible recycling and disposal.</p>
+        <p>To keep our operations running smoothly, we only accept specific items. Please check our guidelines below before dropping off equipment.</p>
+        
+        <div class="ewaste-flex">
+            <div class="ewaste-accepted">
+                <h3>✅ What We ACCEPT</h3>
+                <ul class="ewaste-list">
+                    <li>Desktop Computers & Laptops</li>
+                    <li>Smartphones, Tablets & Cell Phones</li>
+                    <li>Circuit Boards & Electronic Components</li>
+                    <li>Select Small Electronics & Hard Drives</li>
+                </ul>
+            </div>
+            <div class="ewaste-rejected">
+                <h3>❌ What We DO NOT Take</h3>
+                <ul class="ewaste-list">
+                    <li>CRTs / Old Tube TVs or Monitors</li>
+                    <li>Large Household Appliances</li>
+                    <li>Printers & Ink Cartridges</li>
+                    <li>Batteries / Hazardous Waste</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <!-- Tech Lessons Section -->
     <div id="lessons" class="card-box">
         <h2>One-on-One Tech Lessons</h2>
@@ -76,12 +105,12 @@
         <!-- Contact Form -->
         <div class="form-container">
             <h3>Send Us a Message</h3>
-            <form action="YOUR_FORMSPREE_LINK" method="POST">
+            <form action="https://formspree.io/f/xeeypdgq" method="POST">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="phone">Your Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
+                <label for="phone">Your Phone Number / Email:</label>
+                <input type="text" id="phone" name="phone" required>
 
                 <label for="message">How can we help?</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
