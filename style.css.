@@ -1,11 +1,12 @@
-/* Neon Cyberpunk Accessible Styling */
+/* Lato Black & Layered Neon/Gold Styling */
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-    background-color: #050508; /* Absolute deep space black */
+    font-family: 'Lato', sans-serif;
+    font-weight: 950; /* Maximum bold weight for Lato Black */
+    background-color: #000000; /* Pure Black Base Layer */
     color: #f3f4f6;
     margin: 0;
     padding: 0;
@@ -14,18 +15,18 @@ body {
 }
 
 h1 {
-    font-size: 2.8em;
-    color: #ff007f; /* Neon Hot Pink */
+    font-size: 3em;
+    color: #fbbf24; /* Vibrant Gold */
     text-align: center;
     margin-bottom: 5px;
-    text-shadow: 0 0 10px rgba(255, 0, 127, 0.6), 0 0 20px rgba(255, 0, 127, 0.3);
+    text-shadow: 0 0 12px rgba(251, 191, 36, 0.6), 2px 2px 0px #000000;
 }
 
 h2 {
-    font-size: 2.2em;
-    color: #00f0ff; /* Neon Electric Cyan */
+    font-size: 2.3em;
+    color: #fbbf24; /* Gold Titles */
     text-align: center;
-    border-bottom: 3px solid #00f0ff;
+    border-bottom: 3px solid #00f0ff; /* Electric Blue Accent Line */
     padding-bottom: 10px;
     margin-top: 10px;
     text-shadow: 0 0 8px rgba(0, 240, 255, 0.5);
@@ -35,38 +36,35 @@ p {
     text-align: center;
     line-height: 1.6;
     margin: 15px 10px;
-    color: #cbd5e1;
+    color: #e2e8f0;
 }
 
 .subtitle {
     font-size: 1.25em;
-    font-weight: bold;
-    color: #39ff14; /* Neon Lime Green */
-    text-shadow: 0 0 8px rgba(57, 255, 20, 0.4);
+    color: #00f0ff; /* Electric Blue First Layer */
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.5);
 }
 
 .highlight-text {
-    color: #ff007f;
-    font-weight: bold;
+    color: #fbbf24;
 }
 
-/* Persistent Neon Navigation Menu */
+/* Persistent Navigation Menu */
 .top-menu {
-    background-color: #0b0f19;
+    background-color: #050b14;
     position: fixed;
     top: 0;
     width: 100%;
     padding: 15px 0;
     text-align: center;
     z-index: 1000;
-    border-bottom: 3px solid #ff007f;
-    box-shadow: 0 0 15px rgba(255, 0, 127, 0.4);
+    border-bottom: 3px solid #00f0ff;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
 }
 
 .top-menu a {
     color: #f9fafb;
     text-decoration: none;
-    font-weight: bold;
     margin: 0 15px;
     font-size: 1.2em;
     padding: 10px;
@@ -74,20 +72,20 @@ p {
 }
 
 .top-menu a:hover {
-    color: #00f0ff;
-    text-shadow: 0 0 8px rgba(0, 240, 255, 0.8);
+    color: #fbbf24;
+    text-shadow: 0 0 8px rgba(251, 191, 36, 0.8);
     text-decoration: underline;
 }
 
-/* Neon Card Containers */
+/* Layered Neon Card Containers (Black + Blue background layers with Neon borders) */
 .card-box {
-    background-color: #0b0f19;
-    border: 3px solid #00f0ff;
+    background: linear-gradient(135deg, #050b14 0%, #000000 100%);
+    border: 3px solid #00f0ff; /* Electric Blue Neon Border */
     border-radius: 15px;
     max-width: 850px;
     margin: 30px auto;
     padding: 35px 25px;
-    box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.3), inset 0 0 15px rgba(0, 240, 255, 0.1);
 }
 
 /* Service Sub-cards */
@@ -99,24 +97,25 @@ p {
 }
 
 .service-item {
-    background-color: #131b2e;
-    border: 2px solid #39ff14; /* Neon lime borders for sub-services */
+    background-color: #0a1120;
+    border: 2px solid #fbbf24; /* Gold neon sub-borders */
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(57, 255, 20, 0.15);
+    box-shadow: 0 0 12px rgba(251, 191, 36, 0.2);
 }
 
 .service-item h3 {
-    color: #39ff14;
+    color: #fbbf24;
     text-align: center;
     margin-top: 0;
     font-size: 1.3em;
-    text-shadow: 0 0 6px rgba(57, 255, 20, 0.4);
+    text-shadow: 0 0 6px rgba(251, 191, 36, 0.4);
 }
 
 .service-item p {
     margin-bottom: 0;
     font-size: 0.95em;
+    color: #f3f4f6;
 }
 
 /* Lesson List Styling */
@@ -133,26 +132,26 @@ p {
     margin-bottom: 10px;
 }
 
-/* Glowing Neon Call Button */
+/* Neon Call Button */
 .call-button {
     display: block;
-    background-color: #ff007f;
-    color: #ffffff;
+    background-color: #fbbf24;
+    color: #000000;
     font-size: 1.6em;
-    font-weight: bold;
     text-align: center;
     text-decoration: none;
     padding: 20px;
     margin: 30px auto 10px auto;
     border-radius: 12px;
-    border: 3px solid #ff758f;
+    border: 3px solid #00f0ff;
     max-width: 90%;
-    box-shadow: 0 0 20px rgba(255, 0, 127, 0.6);
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.6);
 }
 
 .call-button:hover {
-    background-color: #e60073;
-    box-shadow: 0 0 30px rgba(255, 0, 127, 0.9);
+    background-color: #f59e0b;
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.8);
+    color: #000000;
 }
 
 /* Contact Form Styling */
@@ -161,25 +160,25 @@ p {
     color: #000000;
     padding: 25px;
     margin: 25px auto;
-    border: 3px solid #00f0ff;
+    border: 3px solid #fbbf24;
     border-radius: 12px;
     max-width: 90%;
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
 }
 
 .form-container h3 {
     text-align: center;
-    color: #0b0f19;
+    color: #000000;
     margin-top: 0;
     font-size: 1.4em;
 }
 
 label {
     display: block;
-    font-weight: bold;
+    font-weight: 900;
     margin-top: 15px;
     margin-bottom: 5px;
-    color: #0b0f19;
+    color: #000000;
     font-size: 0.95em;
 }
 
@@ -191,6 +190,8 @@ input, textarea {
     border-radius: 8px;
     background-color: #f9fafb;
     color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 
 input:focus, textarea:focus {
@@ -202,28 +203,29 @@ input:focus, textarea:focus {
 .submit-button {
     display: block;
     width: 100%;
-    background-color: #ff007f;
-    color: #ffffff;
+    background-color: #00f0ff;
+    color: #000000;
     font-size: 1.2em;
-    font-weight: bold;
     padding: 14px;
     border: none;
     border-radius: 8px;
     margin-top: 25px;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
 }
 
 .submit-button:hover {
-    background-color: #e60073;
+    background-color: #38bdf8;
 }
 
 .social-title {
-    color: #39ff14;
+    color: #00f0ff;
     text-align: center;
     margin-top: 35px;
     font-size: 1.3em;
-    text-shadow: 0 0 6px rgba(57, 255, 20, 0.4);
+    text-shadow: 0 0 6px rgba(0, 240, 255, 0.4);
 }
 
 /* Image Sizing Controls */
@@ -233,9 +235,9 @@ input:focus, textarea:focus {
     max-width: 550px;
     height: auto;
     margin: 20px auto;
-    border: 3px solid #00f0ff;
+    border: 3px solid #fbbf24;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.3);
 }
 
 .qr-container img {
@@ -244,19 +246,19 @@ input:focus, textarea:focus {
     max-width: 220px;
     height: auto;
     margin: 15px auto;
-    border: 3px solid #39ff14;
+    border: 3px solid #00f0ff;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
 }
 
 /* Bottom Footer Notice */
 .footer-notice {
-    background-color: #0b0f19;
-    border-top: 4px solid #ff007f;
+    background-color: #050b14;
+    border-top: 4px solid #fbbf24;
     padding: 25px 20px;
     margin-top: 50px;
     text-align: center;
-    box-shadow: 0 0 15px rgba(255, 0, 127, 0.3);
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.3);
 }
 
 .footer-notice p {
@@ -267,6 +269,6 @@ input:focus, textarea:focus {
 
 .footer-notice a {
     color: #00f0ff;
-    font-weight: bold;
+    font-weight: 900;
     text-decoration: underline;
 }
