@@ -87,6 +87,34 @@ p {
     box-shadow: 0 0 25px rgba(0, 240, 255, 0.3), inset 0 0 15px rgba(0, 240, 255, 0.1);
 }
 
+/* Warning Box Modifiers */
+.warning-box {
+    border-color: #ef4444;
+    box-shadow: 0 0 25px rgba(239, 68, 68, 0.3), inset 0 0 15px rgba(239, 68, 68, 0.1);
+}
+
+.warning-box h2 {
+    border-bottom: 3px solid #ef4444;
+    text-shadow: 0 0 8px rgba(239, 68, 68, 0.5);
+}
+
+.policy-list {
+    max-width: 750px;
+    margin: 20px auto;
+    text-align: left;
+    color: #e2e8f0;
+    font-size: 1.05em;
+    line-height: 1.8;
+}
+
+.policy-list li {
+    margin-bottom: 15px;
+}
+
+.policy-list strong {
+    color: #fbbf24;
+}
+
 /* Service Sub-cards */
 .service-grid {
     display: flex;
